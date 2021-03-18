@@ -1,0 +1,166 @@
+
+:root {
+  --serene: #022238;
+  --lune: #89A0BC;
+  --fluffy: #e9e9f2;
+  --dream: #192130;
+  --bean: #60585c;
+}
+
+/* global */
+
+body {
+  font-family: Montserrat;
+  background-color: var(--fluffy);
+  color: var(--bean);
+}
+
+h1, h2 {
+  color: var(--dream);
+  font-family: Didot;
+}
+
+p {
+  min-width: 200px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+}
+
+/* by classes */
+
+.navbar {
+  font-family: Lato;
+}
+
+.nav-color {
+  color: var(--dream)!important;
+}
+
+.btn {
+  border-color: var(--bean);
+  color: var(--bean);
+}
+
+.btn:hover {
+  color: var(--dream);
+}
+
+.tag {
+  margin: 0.15rem;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+
+/* by IDs */
+
+#content-col {
+  padding-top: 10rem;
+}
+
+#top-content {
+  min-height: 200px;
+}
+
+#bottom-content {
+  min-height: 200px;
+}
+
+#self-img {
+  height: 250px;
+}
+
+#tags {
+  margin-bottom: 4rem;
+}
+
+#featured-img {
+  height: 200px;
+  margin-bottom: 5rem;
+}
+
+#copytext {
+  position: absolute;
+  width: 100%;
+  color: var(--bean);
+  line-height: 40px;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+/* media query - drats! */
+
+@media only screen and (max-width: 1200px) {
+  /* point at which the tags start to be weird*/
+  .tag {
+    line-height: 0.5;
+  }
+  #content-col {
+    padding-top: 5rem;
+  }
+  #tags {
+    margin-bottom: 2rem;
+  }
+  #featured-img {
+    margin-bottom: 3rem;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+  /* point at which columns stack*/
+  .tag {
+    line-height: 0.5;
+  }
+
+  #tags {
+    margin-bottom: 2rem;
+  }
+  #content-col {
+    padding-top: 5rem;
+  }
+  #intro {
+    margin-top: 3rem;
+  }
+  #featured {
+    margin-top: 3rem;
+  }
+  #featured-img {
+    margin-bottom: 3rem;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+  /* really slim */
+  .tag {
+    line-height: 0.5;
+  }
+
+  #tags {
+    margin-bottom: 2rem;
+  }
+  #content-col {
+    padding-top: 5rem;
+  }
+  #intro {
+    margin-top: 3rem;
+  }
+  #featured {
+    margin-top: 3rem;
+  }
+  #featured-img {
+    margin-bottom: 3rem;
+    height: 250px;
+    width: 250px;
+  }
+}
