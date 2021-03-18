@@ -61,6 +61,18 @@ footer {
     box-shadow: none!important;
 }
 
+.underline {
+  background: 
+      linear-gradient(currentColor 0 0) 
+      bottom /var(--d, 0) 0.2px 
+      no-repeat;
+  transition:0.2s;
+}
+
+.underline:hover {
+  --d: 100%;
+}
+
 /* by IDs */
 
 #content-col {
