@@ -172,7 +172,6 @@ footer {
   }
   #featured-img {
     margin-bottom: 3rem;
-    height: 250px;
-    width: 250px;
+    display: block;
   }
 }
