@@ -20,16 +20,15 @@ h1, h2 {
   font-family: Didot;
 }
 
-p {
-  min-width: 200px;
-}
-
 footer {
   position: absolute;
   width: 100%;
 }
 
 /* by classes */
+.container-hide {
+  display: none;
+}
 
 .navbar {
   font-family: Lato;
