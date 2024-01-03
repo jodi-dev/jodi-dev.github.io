@@ -33,10 +33,13 @@
             <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span><i class="fa fa-bars nav-color"></i></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ml-auto text-center">
-                    <li class="nav-item"><a class="nav-link nav-color underline" href="https://github.com/jodiqiao">GitHub</a></li>
-                    <li class="nav-item"><a class="nav-link nav-color underline" href="https://www.linkedin.com/in/jodiqiao/">LinkedIn</a></li>
-                    <li class="nav-item"><a class="nav-link nav-color underline" href="https://jodi-dev.github.io/hello/" hidden>Blog</a></li>
-                    <li>
+                    <li class="nav-item m-1" aria-label="Gallery">
+                        <a class="nav-link nav-color" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item m-1" aria-label="Blog">
+                        <a class="nav-link nav-color" href="#">Blog</a>
+                    </li>
+                    <li hidden>
                         <button class="btn ml-2" onclick="toggleTheme()" id="theme-toggler">
                             <i class="fa fa-moon" id="theme-toggler-icon"></i>
                         </button>
@@ -47,43 +50,52 @@
     </nav>
 
 
-    <p style="text-align:center;"> 🚧 under construction 🚧</p>
+    <p hidden> 🚧 under construction 🚧</p>
 
-    <div class="container-hide">
+    <div class="container">
         <div class="row">
             <div class="col-8 offset-2" id="content-col">
-                <div class="row align-items-center m-2" id="top-content">
-                    <div class="col"><img src="assets/images/face.jpeg" id="self-img"></div>
+                <div class="row align-items-center m-2" id="content-row">
+                    <div class="col text-center">
+                        <div class="container-fluid">
+
+                            <img src="assets/images/face.jpeg" 
+                            id="self-img">
+                            <h2 class="pt-4">Jodi Qiao</h2>
+                            <hr>
+                            <div class="d-flex justify-content-center">
+                                <div class="social-icons">
+                                    <div class="social-icon">
+                                        <a class="disabled-link" href="#"  title="location"> 
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span>Ottawa, ON</span>
+                                        </a>
+                                    </div>
+                                    <div class="social-icon">
+                                        <a href="https://github.com/jodi-dev" title="twitter"> 
+                                        <i class="fa fa-github" aria-hidden="true"></i>
+                                        <span>GitHub</span>
+                                        </a>
+                                    </div>
+                                    <div class="social-icon">
+                                        <a href="https://www.linkedin.com/in/jodiqiao/" title="linkedin">
+                                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                        <span>LinkedIn</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col" id="intro">
-                        <h1>Hello</h1>
-                        <p>
-                            My name is Jodi, and I enjoy making software. I'm learning to use text analysis libraries and gradually building my data science skillset. In the long-term, I'd like to help implement ethical and trustworthy ML technology.
-                        </p>
-                    </div>
-                </div>
-                <div class="row align-items-center m-2 pt-4" id="bottom-content">
-                    <div class="col" id="tags">
-                        <button class="btn tag" type="button">Data Science</button>
-                        <button class="btn tag" type="button">Text Analysis</button>
-                        <button class="btn tag" type="button">ShinyJS</button>
-                        <button class="btn tag" type="button">Web Dev</button>
-                        <button class="btn tag" type="button">Fullstack</button>
-                        <button class="btn tag" type="button">HTML & CSS</button>
-                        <button class="btn tag" type="button">Bootstrap</button>
-                        <button class="btn tag" type="button">Flask</button>
-                        <button class="btn tag" type="button">JQuery</button>
-                        <button class="btn tag" type="button">Xd & Ai & Ps</button>
-                        <button class="btn tag" type="button">Android Studio</button>
-                    </div>
-                    <div class="col" id="featured">
-                        <h2>My Recent Project</h2>
-                        <div class="col pt-4">
-                            <a href="https://simplexier.herokuapp.com">
-                                <picture>
-                                    <source media="(max-width: 767px)" srcset="assets/images/featured2.png">
-                                    <img src="assets/images/featured.png" id="featured-img" alt="Jodi's featured project">
-                                </picture>
-                            </a>
+                        <div class="container-fluid">
+                            <h1 style="padding-bottom: 1rem;">Hello</h1>
+                            <div>
+                                <p>I am a new grad from the Software Engineering program at the University of Ottawa. Before that, I graduated summa cum laude with an Honours Bachelors of Science degree at the University of Toronto, during which I worked at biochemistry and molecular biology labs. </p>
+                                
+                                <p>My academic journey has fostered a passion for engineering software, data analysis and scientific research, as these domains encapsulate my core interests and professional pursuits. Beyond career choices, I see these disciplines as a commitment to continuous learning, problem-solving, and contributing to the advancement of technology and research. I'm excited about the prospect of applying these passions to future endeavors and making meaningful contributions to the ever-evolving landscape of technology and science.</p>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -95,7 +107,7 @@
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 <footer> 
-    <small id="copytext">&copy; Copyright 2021 Jodi Qiao</small>
+    <small id="copytext">&copy; Copyright 2023 Jodi Qiao</small>
 </footer> 
 
 </html>
